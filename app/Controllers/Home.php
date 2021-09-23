@@ -6,6 +6,10 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('welcome_message');
+        $data = [
+            'judul' => "Home",
+            'isi' => "v_home",
+        ];
+        echo view('layout/v_wrapper', $data);
     }
 }
